@@ -21,7 +21,9 @@ ViewModel：接收View的指令並對Model請求資料給View使用。
 1.SavedState:可在資料改變時，即時顯示在View上，並保護資料不會因為進入後台而消失。
 2.LiveData:可在資料改變時，即時顯示在View上。
 3.一般:直接在ViewModel中宣告即可使用
+
  <img src="/ViewModel生命週期.png" width="350px" /> 
+ 
 基本上，ViewModel不會因為進入後台便被銷毀，但在程式擱置過久、空間不夠，或手機設定上不允許程式進入後台活動，ViewModel便會被銷毀。雖然隨著Activity的重建，ViewModel亦可以跟著重建，不過重建後資料都會消失。
 
 ### 範例
